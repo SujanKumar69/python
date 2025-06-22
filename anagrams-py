@@ -1,0 +1,13 @@
+def anagrams(str1,str2):
+    if len(str1)!=len(str2):
+        return 'no'
+    sorted_str1 = sorted(str1)
+    sorted_str2 = sorted(str2)
+    if sorted(str1) == sorted(str2):
+        return("They are anagrams")
+    else:
+        return("No")
+
+str1 = input("Enter any string ")
+str2 = input("Enter any string ")
+print(anagrams(str1,str2))
